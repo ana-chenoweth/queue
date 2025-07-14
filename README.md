@@ -1,7 +1,5 @@
 # Queue
 
-## Descripción
-
 Este proyecto es una implementación simple de una **cola (queue) FIFO** en Python. Fue desarrollado como parte de la materia estructura de datos.
 
 La implementación tiene el objetivo de ser clara, legible y funcional, enfocándose en lo esencial de una estructura tipo cola.
