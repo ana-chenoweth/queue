@@ -78,3 +78,17 @@ T Cola<T>::ObtenerFrente() const
         throw "La cola esta vacia";
     return fondo->siguiente->valor;
 }
+
+//*********************************************
+template <typename T>
+bool Cola<T>::EstaVacia() const
+{
+    return tam == 0;
+}
+//********************************************
+template <typename T>
+void Cola<T>::Vaciar()
+{
+    while (!EstaVacia())
+        Eliminar();
+}

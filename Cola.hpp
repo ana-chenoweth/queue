@@ -14,6 +14,8 @@ public:
     int ObtenerTam() const;
     T ObtenerFondo() const;
     T ObtenerFrente() const;
+    bool EstaVacia() const;
+    void Vaciar();
 
 private:
     int tam;
