@@ -1,12 +1,13 @@
 # Queue
 
-[coloca aquí una breve descripción visual del proyecto si tienes logo o captura de pantalla]
-
 ## Descripción
 
 Este proyecto es una implementación simple de una **cola (queue) FIFO** en Python. Fue desarrollado como parte de la materia estructura de datos.
 
 La implementación tiene el objetivo de ser clara, legible y funcional, enfocándose en lo esencial de una estructura tipo cola.
+---
+### Ejemplo de uso
+<img src="img/program.png" alt="Clase cola" width="300">
 
 Principales características:
 
@@ -28,10 +29,6 @@ Para Windows:
 ```bash
 Cola.exe
 ```
----
-### Ejemplo de uso
-
-<img src="img/program.png" alt="Clase cola" width="300">
 
 ---
 
