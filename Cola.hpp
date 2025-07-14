@@ -7,6 +7,8 @@ class Cola
 public:
     Cola();
     ~Cola();
+    Cola(const Cola<T> &c);
+    Cola<T> &operator=(const Cola &c);
 
 private:
     int tam;
