@@ -10,6 +10,7 @@ public:
     Cola(const Cola<T> &c);
     Cola<T> &operator=(const Cola &c);
     void Agregar(T valor);
+    void Eliminar();
     int ObtenerTam() const;
     T ObtenerFondo() const;
     T ObtenerFrente() const;

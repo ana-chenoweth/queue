@@ -42,6 +42,20 @@ void Cola<T>::Agregar(T valor)
    fondo = nuevo;
     ++tam;
 }
+//***********************************************
+template <typename T>
+void Cola<T>::Eliminar()
+{
+    if (EstaVacia())
+        throw "La cola esta vacia";
+
+    Elemento *temp = fondo->siguiente;
+    fondo->siguiente = fondo->siguiente->siguiente;
+    delete temp;
+    if (fondo->siguiente == nullptr)
+        fondo = nullptr;
+    --tam;
+}
 //**********************************************
 template <typename T>
 int Cola<T>::ObtenerTam() const
