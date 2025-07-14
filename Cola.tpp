@@ -111,3 +111,27 @@ void Cola<T>::Imprimir() const
 
     std::cout << "\b\b" << std::endl;
 }
+//*******************************************
+template <typename T>
+void Cola<T>::ImprimirSinFrente() const
+{
+     if (EstaVacia())
+    {
+        std::cout << "La cola est� vac�a" << std::endl;
+        return;
+    }
+
+    Elemento *actual = fondo->siguiente;
+    bool omitirPrimerElemento = true;
+
+    do {
+        if (omitirPrimerElemento) {
+            omitirPrimerElemento = false;
+        } else {
+            std::cout << actual->valor << "\n";
+        }
+        actual = actual->siguiente;
+    } while (actual != fondo->siguiente);
+
+    std::cout << "\b\b" << std::endl;
+}

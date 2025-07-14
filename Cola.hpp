@@ -17,6 +17,7 @@ public:
     bool EstaVacia() const;
     void Vaciar();
     void Imprimir() const;
+    void ImprimirSinFrente() const;
 
 private:
     int tam;
