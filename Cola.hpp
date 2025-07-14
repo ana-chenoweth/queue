@@ -6,6 +6,7 @@ class Cola
 {
 public:
     Cola();
+    ~Cola();
 
 private:
     int tam;
