@@ -92,3 +92,22 @@ void Cola<T>::Vaciar()
     while (!EstaVacia())
         Eliminar();
 }
+//*******************************************
+template <typename T>
+void Cola<T>::Imprimir() const
+{
+    if (EstaVacia())
+    {
+        std::cout << "La cola esta vacia" << std::endl;
+        return;
+    }
+    Elemento *actual = fondo->siguiente;
+
+    do{
+        std::cout << actual->valor << "\n";
+        actual = actual->siguiente;
+    }
+    while (actual != fondo->siguiente);
+
+    std::cout << "\b\b" << std::endl;
+}

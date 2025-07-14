@@ -16,6 +16,7 @@ public:
     T ObtenerFrente() const;
     bool EstaVacia() const;
     void Vaciar();
+    void Imprimir() const;
 
 private:
     int tam;
