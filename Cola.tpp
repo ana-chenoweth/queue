@@ -42,3 +42,25 @@ void Cola<T>::Agregar(T valor)
    fondo = nuevo;
     ++tam;
 }
+//**********************************************
+template <typename T>
+int Cola<T>::ObtenerTam() const
+{
+    return tam;
+}
+//**********************************************
+template <typename T>
+T Cola<T>::ObtenerFondo() const
+{
+    if (EstaVacia())
+        throw "La cola esta vacia";
+    return fondo->valor;
+}
+//**********************************************
+template <typename T>
+T Cola<T>::ObtenerFrente() const
+{
+    if (EstaVacia())
+        throw "La cola esta vacia";
+    return fondo->siguiente->valor;
+}
