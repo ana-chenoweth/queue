@@ -33,3 +33,12 @@ Cola<T> &Cola<T>::operator=(const Cola &c)
     }
     return *this;
 }
+//***********************************************
+template <typename T>
+void Cola<T>::Agregar(T valor)
+{
+    Elemento *nuevo = new Elemento(valor, EstaVacia() ? nullptr : fondo->siguiente);
+    (EstaVacia()? nuevo->siguiente: fondo->siguiente) = nuevo;
+   fondo = nuevo;
+    ++tam;
+}

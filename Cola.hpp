@@ -9,6 +9,7 @@ public:
     ~Cola();
     Cola(const Cola<T> &c);
     Cola<T> &operator=(const Cola &c);
+    void Agregar(T valor);
 
 private:
     int tam;
